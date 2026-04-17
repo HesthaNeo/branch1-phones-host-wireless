@@ -42,8 +42,13 @@
         <h3>Step 7: Connect A Host Directly To Each Of The Two Cisco 7960 VoIP Phones That Were Just Connected To The Network</h3>
                 <img width="758" height="494" alt="Screenshot 2026-04-17 001606" src="https://github.com/user-attachments/assets/283ea139-330f-4d65-b754-ab8d70d7a616" />
         <h3>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</h3>
-        <h3>Step 9: Test IP Connectivity To The Internet By Pinging Google Server 8.8.8.8</h3>
+                <img width="872" height="1318" alt="Screenshot 2026-04-17 001920" src="https://github.com/user-attachments/assets/a1d7a9e8-b075-44c8-a06f-548d7253e0e1" />
+                <img width="872" height="1316" alt="Screenshot 2026-04-17 002041" src="https://github.com/user-attachments/assets/49211c4c-7f85-4f2f-9b20-12b7b72fba30" />
+                <p><em>- On both hosts we are able to successfully ping 192.168.20.1 (default gateway), 192.168.10.100 (the HQ-Core Switch Data network gateway at HQ), 192.168.10.50 (the HQ-Server), and both google's DNS server by IP and hostname.</em></p>
         <h3>Step 10: Test DNS And Website Connectivity By Using The Web Browser On Each Host To Access Www.Google.Com</h3>
+                <img width="524" height="682" alt="Screenshot 2026-04-17 002316" src="https://github.com/user-attachments/assets/68e5ff3c-5682-40d6-a405-f14f3c521d80" />
+                <img width="560" height="715" alt="Screenshot 2026-04-17 002346" src="https://github.com/user-attachments/assets/468b30ed-2d5f-4be9-bb11-9aff0185baee" />
+                <p><em>- Successful.</em></p>
         <h3>Step 11: Install And Configure Corporate Wireless Access</h3>
             <p>- A. Install An AccessPoint-PT And Connect It To The Branch 1 Access Switch</p>
             <p>- B. Configure The New AP With A uUnique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
