@@ -1,5 +1,5 @@
 <p align="center">
-<img width="562" height="182" alt="Screenshot 2026-04-14 195018" src="https://github.com/user-attachments/assets/93bacb1e-c33d-4b0e-9ac1-bb490a281828" />
+<img width="656" height="209" alt="Screenshot 2026-04-16 233649" src="https://github.com/user-attachments/assets/0aea22f3-49f3-4add-941c-cafcb1febb35" />
 </p>
 <h1><u>Milestone 10: Branch 1 Phones, Hosts and Wireless</u></h1>
     <p>Ninth phase, we will install Cisco CP-7960 VoIP phones, connect host computers for testing, and also install 1 wireless access point for corporate network access using a unique SSID.</p>
