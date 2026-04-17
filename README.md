@@ -40,6 +40,7 @@
                 <p><em>- We are able to successfully place calls to the PSTN.</em></p>
         <h3>Step 6: Test Inbound Dialing To B1 External Phone Number(s) <em>(Lab Configuration Not Supported)</em></h3>
         <h3>Step 7: Connect A Host Directly To Each Of The Two Cisco 7960 VoIP Phones That Were Just Connected To The Network</h3>
+                <img width="758" height="494" alt="Screenshot 2026-04-17 001606" src="https://github.com/user-attachments/assets/283ea139-330f-4d65-b754-ab8d70d7a616" />
         <h3>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</h3>
         <h3>Step 9: Test IP Connectivity To The Internet By Pinging Google Server 8.8.8.8</h3>
         <h3>Step 10: Test DNS And Website Connectivity By Using The Web Browser On Each Host To Access Www.Google.Com</h3>
