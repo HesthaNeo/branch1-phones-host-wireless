@@ -11,65 +11,7 @@
         <p>- B. MAC-Address</p>
         <p>- C. Phone Type</p>
         <p>- D. Button 1</p>
-            <p>- I. MGMT Interface VLAN 100</p>
-            <p>- II. Data Interface VLAN 192</p>
-            <p>- III. Voice Interface VLAN 10</p>
-        <p>- E. Configure DHCP Services For Branch 1 Data And Voice Networks</p>
-            <p>- I. Address Exclusions</p>
-            <p>- II. DHCP Pool B1-DATA</p>
-                <p>- 1. Network</p>
-                <p>- 2. Default-Router</p>
-                <p>- 3. DNS Server</p>
-            <p>- III. DHCP Pool B1-VOICE</p>
-                <p>- 1. Network</p>
-                <p>- 2. Default-Router</p>
-                <p>- 3. Option 150 IP</p>
-        <p>- F. Configure And Connect Private WAN Interface G0/1</p>
-            <p>- I. IP Address</p>
-            <p>- II. Disable CDP</p>
-        <p>- G. Configure Private WAN Border Gateway Protocol (BGP) Peering</p>
-            <p>- I. BGP ASN 65123</p>
-                <p>- 1. Router ID</p>
-                <p>- 2. Neighbor</p>
-                <p>- 3. Networks</p>
-        <p>- H. Configure Default Route Pointing To Private WAN Neighbor IP</p>
-        <p>- I. Configure Private WAN Voice Quality Of Service</p>
-            <p>- I. VOIP Control And RTP Access-Lists</p>
-            <p>- II. VOIP Control And RTP Class-Maps</p>
-            <p>- III. Policy-Map</p>
-            <p>- IV. Apply Policy-Map To Private WAN Interface G0/</p>
-        <p>- J. Configure Telephony-Service</p>
-            <p>- I. Max-Ephones</p>
-            <p>- II. Max-DN</p>
-            <p>- III. IP Source-Address</p>
-        <p>- K. Configure Branch 1 Ephone-DNS</p>
-            <p>- x2001, x2002</p>
-        <p>- L. Configure PSTN Access-List</p>
-        <p>- M. Configure PSTN Voice Interface G0/1</p>
-            <p>- I. IP Address</p>
-            <p>- II. Disable CDP</p>
-            <p>- III. Apply PSTN Access-List Inbound</p>
-        <p>- N. Configure Internal Dial-Peers</p>
-            <p>- I. HQ Extensions (1…$)</p>
-        <p>- O. Configure Outbound Dial-Peers</p>
-            <p>- I. 10-Digit Long Distance And Toll-Free</p>
-            <p>- II. 7-Digit Local</p>
-            <p>- III. International </p>
-            <p>- IV. 411 & 911</p>
-        <p>- P. Configure Outbound Translation Rules <em>(Lab Configuration Not Supported)</em></p>
-        <p>- Q. Configure Inbound Dial-Peers <em>(Lab Configuration Not Supported)</em></p>
-        <p>- R. Configure Inbound Voice Translation Rules <em>(Lab Configuration Not Supported)</em></p>
-        <p>- S. Configure Voice Service VoIP <em>(Lab Configuration Not Supported)</em></p>
-        <p>- T. Configure Session Initiation Protocol (SIP) <em>(Lab Configuration Not Supported)</em></p>
-        <p>- U. Configure DSP Services <em>(Lab Configuration Not Supported)</em></p>
-    <p><b>Step 2: Install and Configure The Branch 1 Switch</b></p>
-        <p>- A. Rack, Mount, And Power On All Three Switches</p>
-        <p>- B. Basic Router Configurations (Hostname, NTP, Domain-Name, SSH, Etc)</p>
-        <p>- C. Configure VLAN Trunking Protocol (VTP) Transparent</p>
-        <p>- D. Configure MGMT VLAN Interface</p>
-        <p>- E. Configure Default Gateway</p>
-        <p>- F. Configure And Connect Trunks Port Back To The Branch 1 Router</p>
-        <p>- G. Configure Access Ports</p>
+    <p><b>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</b></p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Install And Configure The Branch 1 Router</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
