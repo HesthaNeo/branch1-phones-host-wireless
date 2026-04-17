@@ -4,7 +4,8 @@
 <h1><u>Milestone 10: Branch 1 Phones, Hosts and Wireless</u></h1>
     <p>Ninth phase, we will install Cisco CP-7960 VoIP phones, connect host computers for testing, and also install 1 wireless access point for corporate network access using a unique SSID.</p>
     <h2><strong><u>Configuration Steps</u></strong></h2>
-    <p><b>Step 1: Install And Configure The Branch 1 Router</b></p>
+    <p><b>Step 1: Connect Two Cisco 7960 VoIP Phones To The Branch 1 Access Switch</b></p>
+    <p><b>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</b></p>
         <p>- A. Rack, Mount, And Power On The Cisco 2911 Router</p>
         <p>- B. Install Uck9 License</p>
         <p>- C. Basic Router Configurations (Hostname, NTP, Domain-Name, SSH, Etc)</p>
