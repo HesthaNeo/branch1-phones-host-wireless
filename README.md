@@ -6,10 +6,11 @@
     <h2><strong><u>Configuration Steps</u></strong></h2>
     <p><b>Step 1: Connect Two Cisco 7960 VoIP Phones To The Branch 1 Access Switch</b></p>
     <p><b>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</b></p>
-        <p>- A. Rack, Mount, And Power On The Cisco 2911 Router</p>
-        <p>- B. Install Uck9 License</p>
-        <p>- C. Basic Router Configurations (Hostname, NTP, Domain-Name, SSH, Etc)</p>
-        <p>- D. Configure And Connect Branch 1 LAN Interface G0/0</p>
+    <p><b>Step 3: On The Branch 1 Voice Router Configure The Two Ephones That Were Just Connected</b></p>
+        <p>- A. Ephone 1, Ephone 2</p>
+        <p>- B. MAC-Address</p>
+        <p>- C. Phone Type</p>
+        <p>- D. Button 1</p>
             <p>- I. MGMT Interface VLAN 100</p>
             <p>- II. Data Interface VLAN 192</p>
             <p>- III. Voice Interface VLAN 10</p>
