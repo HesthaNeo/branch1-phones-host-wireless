@@ -16,6 +16,7 @@
     <p><b>Step 6: Test Inbound Dialing To B1 External Phone Number(s) <em>(Lab Configuration Not Supported)</em></b></p>
     <p><b>Step 7: Connect A Host Directly To Each Of The Two Cisco 7960 VoIP Phones That Were Just Connected To The Network</b></p>
     <p><b>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</b></p>
+    <p><b>Step 9: Test IP Connectivity To The Internet By Pinging Google Server 8.8.8.8</b></p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Install And Configure The Branch 1 Router</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
