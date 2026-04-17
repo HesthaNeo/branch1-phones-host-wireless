@@ -24,7 +24,9 @@
         <p>- C. Install Two Wireless Tablets And Configure Them With The Same SSID And Passphrase</p>
         <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
         <h2><strong><u>Implementation</u></strong></h2>
-        <h3>Step 1: Install And Configure The Branch 1 Router</h3>
+        <h3>Step 1: Connect Two Cisco 7960 VoIP Phones To The Branch 1 Access Switch</h3>
+        <h3>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</h3>
+        <h3>Step 3: On The Branch 1 Voice Router Configure The Two Ephones That Were Just Connected</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
                 <img width="1395" height="873" alt="Screenshot 2026-04-16 161350" src="https://github.com/user-attachments/assets/721ece10-de94-4c77-92cd-9dfc35198b4b" />
             <p>- B. Next, we will install the uck9 license.</p>
@@ -36,70 +38,7 @@
                 <img width="874" height="968" alt="Screenshot 2026-04-16 162754" src="https://github.com/user-attachments/assets/3e343fe9-285e-4a55-89e8-875eee416989" />
             <p>- D. Now, we'll configure and connect branch 1 LAN interface G0/0. We'll set our VLANS respectively as well. (Mgmt interface vlan 100, data interface vlan 192, voice interface vlan 10.)</p>
                 <img width="869" height="887" alt="Screenshot 2026-04-16 163432" src="https://github.com/user-attachments/assets/c0710a87-16ea-4e29-9e90-a407b5486548" />
-            <p>- E. Next, we'll configure DHCP services for branch 1 data and voice networks.</p>
-                1. First, address exclusions for the DCHP pools.
-                <img width="870" height="225" alt="Screenshot 2026-04-16 163950" src="https://github.com/user-attachments/assets/381602d7-4f18-4d78-a47e-eadc7ed229d4" />
-                2. Second, we'll configure the DHCP pool for B1-data (network, default-router, dns server, etc.)
-                <img width="867" height="283" alt="Screenshot 2026-04-16 164226" src="https://github.com/user-attachments/assets/6851ab5c-dd2f-40e4-922d-bf4f6e977239" />
-                3. Lastly, we'll configure the DHCP pool for B1-voice.
-                <img width="873" height="283" alt="Screenshot 2026-04-16 164428" src="https://github.com/user-attachments/assets/e05789f3-d520-48ec-9db4-80887c200932" />
-                <p><em>- The option "150 command" adds the TFTP option. Also no DNS server is required to be handed out to the phones on the network.</em></p>
-            <p>- F. For this next step, and also the next series of steps we will now configure and connect private WAN interface G0/1.</p>
-                <img width="865" height="403" alt="Screenshot 2026-04-16 164854" src="https://github.com/user-attachments/assets/cf723a89-e356-4125-ba15-e78ee110d140" />
-                <img width="1208" height="865" alt="Screenshot 2026-04-16 164959" src="https://github.com/user-attachments/assets/baf55426-a5e2-4134-b95d-0d47afda7e19" />
-                <img width="873" height="334" alt="Screenshot 2026-04-16 165109" src="https://github.com/user-attachments/assets/899d97c2-5cc9-42a4-a866-4b97ea88ddf3" />
-                <p><em>- And as you can see, we have successful pings to the provider router. As a side note, we also configured "no cdp enable" to ensure we aren't sending cdp hello messages to the provider network.</em></p>
-            <p>- G. Next, we'll configure private WAN border gateway protocol (BGP) peering.</p>
-                1. We'll start by configuring the BGP router ID and set up peering with the provider router.
-                <img width="869" height="243" alt="Screenshot 2026-04-16 165712" src="https://github.com/user-attachments/assets/9d88ca45-7162-4080-8041-9427d952251f" />
-                <p><em>- Command "router bgp 65123" starts so we can enter the configuration for autonomous system #65123. Command "bgp router-id 192.168.250.6" forces the router to us g0/1 IP as the BGP ID. Command "neighbor 192.168.250.5 remote-as 65535" configures the BGP peer.</em></p>
-                2. Second, we'll configure network statements to advertise across the private WAN.
-                <img width="870" height="1094" alt="Screenshot 2026-04-16 170216" src="https://github.com/user-attachments/assets/4cbe6e60-4d19-45a2-b592-172574edbecb" />
-                <p><em>- "network 192.168.120.0 mask 255.255.255.0" advertises B1 MGMT, "network 192.168.20.0 mask 255.255.255.0" advertises B1 DATA, "network 10.10.20.0 mask 255.255.255.0" advertises B1 VOICE.</em></p>
-                <p><em>- Let's check the bgp neighbor to make sure it is connected:</em></p>
-                <img width="874" height="365" alt="Screenshot 2026-04-16 170610" src="https://github.com/user-attachments/assets/cbf3841e-e22b-4c9d-a4e0-4635d7496897" />
-                <img width="871" height="1559" alt="Screenshot 2026-04-16 170656" src="https://github.com/user-attachments/assets/2056a6eb-5e06-43a6-a93c-307944b0e2d5" />
-                <img width="871" height="745" alt="Screenshot 2026-04-16 170810" src="https://github.com/user-attachments/assets/cbc721c6-7581-4317-a631-97c784cbf119" />
-                <img width="870" height="680" alt="Screenshot 2026-04-16 170928" src="https://github.com/user-attachments/assets/8b0611ec-527b-48e4-a5d5-ba86e494fd38" />
-                <p><em>- Successful.</em></p>
-            <p>- H. Now, we will need to configure a default route pointing to the private WAN neighbor IP.</p>
-                <img width="872" height="231" alt="Screenshot 2026-04-16 171242" src="https://github.com/user-attachments/assets/b61200ef-05dd-4b99-a5b2-bb7063b2cf5b" />
-            <p>- I. Next, we'll configure the Private WAN voice quality of service.</p>
-                <img width="871" height="858" alt="Screenshot 2026-04-16 171730" src="https://github.com/user-attachments/assets/3477303d-f3f7-46ad-931a-492ea96cb34d" />
-                <img width="872" height="258" alt="Screenshot 2026-04-16 171825" src="https://github.com/user-attachments/assets/e95a26dd-15d8-4f09-8b88-4650ab9fb2e1" />
-            <p>- J. Next, we'll configure telephony-service (max ephones, max-dn, ip source address, etc.)</p>
-                <img width="868" height="337" alt="Screenshot 2026-04-16 172149" src="https://github.com/user-attachments/assets/63877c2e-3d78-4cbd-b780-cdbe54d1e13e" />
-            <p>- K. Next, we'll configure Branch 1 ephone-dns.</p>
-                <img width="870" height="350" alt="Screenshot 2026-04-16 172401" src="https://github.com/user-attachments/assets/f2d35d32-0152-44f8-9500-2246b1002fd5" />
-            <p>- L. Now, we'll configure the PSTN access-list to the PSTN Provider for external phone service.</p>
-                <p><em>- *The following access-list will allow Session Initiation Protocol, Real-time Transport Protocol and ICMP from the PSTN Provider. In addition, we have ports open that are not normally used with PSTN connections to allow the phone calls within Packet Tracer. This is because the Packet Tracer lab uses H323 signaling and ephemeral port range TCP 1024-4999. This ephemeral port range is not normally used for calls to/from the PSTN, but we will need them open for our lab to function.</em></p>
-                <img width="870" height="379" alt="Screenshot 2026-04-16 172947" src="https://github.com/user-attachments/assets/bdbf4e38-c5ca-4113-804a-63bab33e5b6b" />
-            <p>- M. Next, we'll configure and connect the PSTN voice interface G0/2 and apply our PSTN access-list inbound.</p>
-                <img width="871" height="414" alt="Screenshot 2026-04-16 173510" src="https://github.com/user-attachments/assets/bec864ce-2d0b-4d65-bea9-02a77ca11267" />
-                <img width="1155" height="879" alt="Screenshot 2026-04-16 173629" src="https://github.com/user-attachments/assets/6a696088-1778-42db-b071-c2f06fe5eabe" />
-                <img width="873" height="392" alt="Screenshot 2026-04-16 173941" src="https://github.com/user-attachments/assets/29f90eb0-4b3b-4a23-a2f3-f5b40e177998" />
-                <p><em>- Successful connectivity to the PSTN provider router.</em></p>
-            <p>- N. Now, we'll configure internal dial-peers.</p>
-                1. First, we'll configure dial peers for dialing Headquarters extensions.
-                <img width="870" height="340" alt="Screenshot 2026-04-16 174353" src="https://github.com/user-attachments/assets/0f5ac575-e1b1-42e2-a4e7-e0700b703533" />
-                2. Second, we'll configure dial peers for dialing Branch 2 extensions.
-                <img width="870" height="271" alt="Screenshot 2026-04-16 174527" src="https://github.com/user-attachments/assets/a1ace9c5-6716-4cd2-a526-62034ec35330" />
-            <p>- O. Now, we'll configure outbound dial-peers.</p>
-                1. First, we'll configure dial peers for dialing 10-digit numbers:
-                <img width="870" height="271" alt="Screenshot 2026-04-16 174804" src="https://github.com/user-attachments/assets/ece1306b-9b17-47f3-b5ae-2a5427e71605" />
-                2. Second, we'll configure dial peers for dialing 7-digit numbers:
-                <img width="873" height="266" alt="Screenshot 2026-04-16 174943" src="https://github.com/user-attachments/assets/9093dbe3-5675-4e5b-ba05-45b11df2835b" />
-                3. Third, we'll configure dial peers for dialing international nunumbers:
-                <img width="873" height="271" alt="Screenshot 2026-04-16 175108" src="https://github.com/user-attachments/assets/35df698a-62df-4011-9636-ae4c0930daf7" />
-                4. Lastly, we'll configure dial peers for dialing 411 and 911 respectively:
-                <img width="868" height="268" alt="Screenshot 2026-04-16 175250" src="https://github.com/user-attachments/assets/5585aa33-d5b3-4102-8a58-f70bc6eb1aa7" />
-            <p>- P. Configure Outbound Translation Rules <em>(Lab Configuration Not Supported)</em></p>
-            <p>- Q. Configure Inbound Dial-Peers <em>(Lab Configuration Not Supported)</em></p>
-            <p>- R. Configure Inbound Voice Translation Rules <em>(Lab Configuration Not Supported)</em></p>
-            <p>- S. Configure Voice Service VoIP <em>(Lab Configuration Not Supported)</em></p>
-            <p>- T. Configure Session Initiation Protocol (SIP) <em>(Lab Configuration Not Supported)</em></p>
-            <p>- U. Configure DSP Services <em>(Lab Configuration Not Supported)</em></p>
-        <h3>Step 2: Install and Configure The Branch 1 Switch</h3>
+        <h3>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</h3>
             <p>- A. We'll start by racking, mounting, and powering on the branch 1 2960 switch.</p>
                 <img width="1281" height="906" alt="Screenshot 2026-04-16 175802" src="https://github.com/user-attachments/assets/52b16c9b-2b4b-4f7a-ad8f-78c51d8dfa15" />
             <p>- B. Next we will do basic switch configurations (hostname, NTP, domain-name, SSH, etc).</p>
@@ -116,7 +55,17 @@
                 <img width="869" height="1505" alt="Screenshot 2026-04-16 181544" src="https://github.com/user-attachments/assets/86663e80-8a33-45b4-a758-4d2716d714bf" />
                 <img width="870" height="666" alt="Screenshot 2026-04-16 181634" src="https://github.com/user-attachments/assets/cbf22726-96c5-4d47-9c1b-40b024877f36" />
                 <p><em>- *Now that the Branch 1 router and switch are installed, we can set up the phones, hosts & wireless!</em></p>
-
+        <h3>Step 5: Test Outbound Dialing To The PSTN Test Phone 8885551111</h3>
+        <h3>Step 6: Test Inbound Dialing To B1 External Phone Number(s) <em>(Lab Configuration Not Supported)</em></h3>
+        <h3>Step 7: Connect A Host Directly To Each Of The Two Cisco 7960 VoIP Phones That Were Just Connected To The Network</h3>
+        <h3>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</h3>
+        <h3>Step 9: Test IP Connectivity To The Internet By Pinging Google Server 8.8.8.8</h3>
+        <h3>Step 10: Test DNS And Website Connectivity By Using The Web Browser On Each Host To Access Www.Google.Com</h3>
+        <h3>Step 11: Install And Configure Corporate Wireless Access</h3>
+            <p>- A. Install An AccessPoint-PT And Connect It To The Branch 1 Access Switch</p>
+            <p>- B. Configure The New AP With A uUnique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
+            <p>- C. Install Two Wireless Tablets And Configure Them With The Same SSID And Passphrase</p>
+            <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
 
 
 
