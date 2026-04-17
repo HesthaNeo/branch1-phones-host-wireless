@@ -18,6 +18,11 @@
     <p><b>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</b></p>
     <p><b>Step 9: Test IP Connectivity To The Internet By Pinging Google Server 8.8.8.8</b></p>
     <p><b>Step 10: Test DNS And Website Connectivity By Using The Web Browser On Each Host To Access Www.Google.Com</b></p>
+    <p><b>Step 11: Install And Configure Corporate Wireless Access</b></p>
+        <p>- A. Install An AccessPoint-PT And Connect It To The Branch 1 Access Switch</p>
+        <p>- B. Configure The New AP With A uUnique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
+        <p>- C. Phone Type</p>
+        <p>- D. Button 1</p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Install And Configure The Branch 1 Router</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
