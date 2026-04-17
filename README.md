@@ -22,7 +22,7 @@
         <p>- A. Install An AccessPoint-PT And Connect It To The Branch 1 Access Switch</p>
         <p>- B. Configure The New AP With A uUnique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
         <p>- C. Install Two Wireless Tablets And Configure Them With The Same SSID And Passphrase</p>
-        <p>- D. Button 1</p>
+        <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Install And Configure The Branch 1 Router</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
