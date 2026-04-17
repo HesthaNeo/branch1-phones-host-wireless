@@ -13,6 +13,7 @@
         <p>- D. Button 1</p>
     <p><b>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</b></p>
     <p><b>Step 5: Test Outbound Dialing To The PSTN Test Phone 8885551111</b></p>
+    <p><b>Step 6: Test Inbound Dialing To B1 External Phone Number(s) <em>(Lab Configuration Not Supported)</em></b></p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Install And Configure The Branch 1 Router</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
