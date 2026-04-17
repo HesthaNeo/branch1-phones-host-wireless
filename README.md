@@ -33,30 +33,11 @@
         <h3>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</h3>
                 <img width="1749" height="886" alt="Screenshot 2026-04-17 000337" src="https://github.com/user-attachments/assets/a7713800-c59d-4724-9d8a-0683ba0415eb" />
                 <p><em>- We are able to successfully place calls between the branch 1 phones.</em></p>
-                <img width="1739" height="880" alt="Screenshot 2026-04-17 000508" src="https://github.com/user-attachments/assets/bc927172-781e-4db3-b9eb-b77c1c7c7c6a" />
-                <p><em>- We are able to successfully place calls to the PSTN.</em></p>
                 <img width="1748" height="883" alt="Screenshot 2026-04-17 001240" src="https://github.com/user-attachments/assets/d4928e98-fc49-40cb-bc05-5d7f9b35001f" />
                 <p><em>- We are able to successfully place calls to the HQ from branch 1.</em></p>
-
-
-
-            <p>- A. We'll start by racking, mounting, and powering on the branch 1 2960 switch.</p>
-                <img width="1281" height="906" alt="Screenshot 2026-04-16 175802" src="https://github.com/user-attachments/assets/52b16c9b-2b4b-4f7a-ad8f-78c51d8dfa15" />
-            <p>- B. Next we will do basic switch configurations (hostname, NTP, domain-name, SSH, etc).</p>
-                <img width="872" height="979" alt="Screenshot 2026-04-16 180031" src="https://github.com/user-attachments/assets/939ab7dc-26f3-49e1-9910-b598ede5874d" />
-            <p>- C. Next we will configure VLAN trunking protocol (VTP) transparent.</p>
-                <img width="871" height="526" alt="Screenshot 2026-04-16 180520" src="https://github.com/user-attachments/assets/cdf6e515-4375-4ed3-95c7-a975f3b8549f" />
-            <p>- D. Next, we'll configure MGMT vlan interface and add the voice and data vlans to the switch.</p>
-                <img width="870" height="598" alt="Screenshot 2026-04-16 180841" src="https://github.com/user-attachments/assets/d1a9ed83-c8ce-4c20-9d1a-4a1eeff19b73" />
-            <p>- E. *See last step*</p>
-            <p>- F. Now we'll configure and connect trunks port back to the branch 1 router.</p>
-                <img width="872" height="335" alt="Screenshot 2026-04-16 181154" src="https://github.com/user-attachments/assets/82b004e3-2cbc-4f32-b00a-7c9a2f64f9fd" />
-                <img width="1151" height="902" alt="Screenshot 2026-04-16 181256" src="https://github.com/user-attachments/assets/1faa7292-5820-4bc6-9097-2bb8dc4625b8" />
-            <p>- G. Lastly, we'll configure the access ports on the branch 1 switch.</p>
-                <img width="869" height="1505" alt="Screenshot 2026-04-16 181544" src="https://github.com/user-attachments/assets/86663e80-8a33-45b4-a758-4d2716d714bf" />
-                <img width="870" height="666" alt="Screenshot 2026-04-16 181634" src="https://github.com/user-attachments/assets/cbf22726-96c5-4d47-9c1b-40b024877f36" />
-                <p><em>- *Now that the Branch 1 router and switch are installed, we can set up the phones, hosts & wireless!</em></p>
         <h3>Step 5: Test Outbound Dialing To The PSTN Test Phone 8885551111</h3>
+                <img width="1739" height="880" alt="Screenshot 2026-04-17 000508" src="https://github.com/user-attachments/assets/bc927172-781e-4db3-b9eb-b77c1c7c7c6a" />
+                <p><em>- We are able to successfully place calls to the PSTN.</em></p>
         <h3>Step 6: Test Inbound Dialing To B1 External Phone Number(s) <em>(Lab Configuration Not Supported)</em></h3>
         <h3>Step 7: Connect A Host Directly To Each Of The Two Cisco 7960 VoIP Phones That Were Just Connected To The Network</h3>
         <h3>Step 8: Test Each Host By Pinging Around The Branch 1 Network From Each Host, Between Each Host And To The Headquarters Network And PCs</h3>
