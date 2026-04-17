@@ -59,6 +59,11 @@
                 <img width="871" height="879" alt="Screenshot 2026-04-17 003038" src="https://github.com/user-attachments/assets/b45acf8a-5477-4933-b2ff-1b4e9eeef1fb" />
                 <img width="872" height="884" alt="Screenshot 2026-04-17 003111" src="https://github.com/user-attachments/assets/3733fba8-2a7b-4dee-ae87-48e9bf224606" />
             <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
+                <img width="873" height="1335" alt="Screenshot 2026-04-17 003243" src="https://github.com/user-attachments/assets/f69120ad-1cbb-4aac-a011-9d067ae89554" />
+                <img width="872" height="1352" alt="Screenshot 2026-04-17 003404" src="https://github.com/user-attachments/assets/ecc6b598-9987-47b3-9ea1-277083f00562" />
+                <p><em>- Successful.</em></p>
+
+
 
 
 
