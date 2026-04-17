@@ -55,6 +55,9 @@
             <p>- B. Configure The New AP With A Unique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
                 <img width="868" height="882" alt="Screenshot 2026-04-17 002631" src="https://github.com/user-attachments/assets/d3135259-bce1-4142-a972-4421af21d3de" />
             <p>- C. Install Two Wireless Tablets And Configure Them With The Same SSID And Passphrase</p>
+                <img width="757" height="488" alt="Screenshot 2026-04-17 003014" src="https://github.com/user-attachments/assets/4e6da822-c064-4073-b921-404fdd309231" />
+                <img width="871" height="879" alt="Screenshot 2026-04-17 003038" src="https://github.com/user-attachments/assets/b45acf8a-5477-4933-b2ff-1b4e9eeef1fb" />
+                <img width="872" height="884" alt="Screenshot 2026-04-17 003111" src="https://github.com/user-attachments/assets/3733fba8-2a7b-4dee-ae87-48e9bf224606" />
             <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
 
 
