@@ -29,17 +29,7 @@
         <h3>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</h3>
                 <img width="869" height="240" alt="Screenshot 2026-04-16 235828" src="https://github.com/user-attachments/assets/9eca259a-b329-42ac-b1d5-f0bd2e494139" />
         <h3>Step 3: On The Branch 1 Voice Router Configure The Two Ephones That Were Just Connected</h3>
-            <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
-                <img width="1395" height="873" alt="Screenshot 2026-04-16 161350" src="https://github.com/user-attachments/assets/721ece10-de94-4c77-92cd-9dfc35198b4b" />
-            <p>- B. Next, we will install the uck9 license.</p>
-                <img width="866" height="995" alt="Screenshot 2026-04-16 161731" src="https://github.com/user-attachments/assets/7afcbaa1-7742-4097-b7c1-fc429f8569d0" />
-                <img width="870" height="1137" alt="Screenshot 2026-04-16 161850" src="https://github.com/user-attachments/assets/52ae8506-d271-499e-9370-496677da66cd" />
-                <img width="871" height="1354" alt="Screenshot 2026-04-16 161944" src="https://github.com/user-attachments/assets/377ce501-7d58-4aba-9849-8ea7e602f504" />
-                <img width="872" height="1217" alt="Screenshot 2026-04-16 162032" src="https://github.com/user-attachments/assets/b597394e-aaee-4a8e-beaf-6bd237de2906" />
-            <p>- C. Next we will do basic Router configurations (hostname, NTP, domain-name, SSH, etc).</p>
-                <img width="874" height="968" alt="Screenshot 2026-04-16 162754" src="https://github.com/user-attachments/assets/3e343fe9-285e-4a55-89e8-875eee416989" />
-            <p>- D. Now, we'll configure and connect branch 1 LAN interface G0/0. We'll set our VLANS respectively as well. (Mgmt interface vlan 100, data interface vlan 192, voice interface vlan 10.)</p>
-                <img width="869" height="887" alt="Screenshot 2026-04-16 163432" src="https://github.com/user-attachments/assets/c0710a87-16ea-4e29-9e90-a407b5486548" />
+                    <img width="873" height="823" alt="Screenshot 2026-04-17 000034" src="https://github.com/user-attachments/assets/6721d78a-fd6f-4700-91c2-5f687d5cf919" />
         <h3>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</h3>
             <p>- A. We'll start by racking, mounting, and powering on the branch 1 2960 switch.</p>
                 <img width="1281" height="906" alt="Screenshot 2026-04-16 175802" src="https://github.com/user-attachments/assets/52b16c9b-2b4b-4f7a-ad8f-78c51d8dfa15" />
