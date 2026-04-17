@@ -25,7 +25,9 @@
         <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
         <h2><strong><u>Implementation</u></strong></h2>
         <h3>Step 1: Connect Two Cisco 7960 VoIP Phones To The Branch 1 Access Switch</h3>
+                <img width="762" height="495" alt="Screenshot 2026-04-16 235639" src="https://github.com/user-attachments/assets/b0152e06-0733-41ba-a312-6724b8e19e45" />
         <h3>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</h3>
+                <img width="869" height="240" alt="Screenshot 2026-04-16 235828" src="https://github.com/user-attachments/assets/9eca259a-b329-42ac-b1d5-f0bd2e494139" />
         <h3>Step 3: On The Branch 1 Voice Router Configure The Two Ephones That Were Just Connected</h3>
             <p>- A. First, we will rack, mount, and power on the cisco 2911 router.</p>
                 <img width="1395" height="873" alt="Screenshot 2026-04-16 161350" src="https://github.com/user-attachments/assets/721ece10-de94-4c77-92cd-9dfc35198b4b" />
