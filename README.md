@@ -29,8 +29,17 @@
         <h3>Step 2: Access The Branch 1 Router CLI And View The DHCP Bindings For Each Phone, Obtaining The MAC-Address Of Each Phone</h3>
                 <img width="869" height="240" alt="Screenshot 2026-04-16 235828" src="https://github.com/user-attachments/assets/9eca259a-b329-42ac-b1d5-f0bd2e494139" />
         <h3>Step 3: On The Branch 1 Voice Router Configure The Two Ephones That Were Just Connected</h3>
-                    <img width="873" height="823" alt="Screenshot 2026-04-17 000034" src="https://github.com/user-attachments/assets/6721d78a-fd6f-4700-91c2-5f687d5cf919" />
+                <img width="873" height="823" alt="Screenshot 2026-04-17 000034" src="https://github.com/user-attachments/assets/6721d78a-fd6f-4700-91c2-5f687d5cf919" />
         <h3>Step 4: Test Dialing By Extension Between Each Branch Phone And To The HQ Phones</h3>
+                <img width="1749" height="886" alt="Screenshot 2026-04-17 000337" src="https://github.com/user-attachments/assets/a7713800-c59d-4724-9d8a-0683ba0415eb" />
+                <p><em>- We are able to successfully place calls between the branch 1 phones.</em></p>
+                <img width="1739" height="880" alt="Screenshot 2026-04-17 000508" src="https://github.com/user-attachments/assets/bc927172-781e-4db3-b9eb-b77c1c7c7c6a" />
+                <p><em>- We are able to successfully place calls to the PSTN.</em></p>
+                <img width="1748" height="883" alt="Screenshot 2026-04-17 001240" src="https://github.com/user-attachments/assets/d4928e98-fc49-40cb-bc05-5d7f9b35001f" />
+                <p><em>- We are able to successfully place calls to the HQ from branch 1.</em></p>
+
+
+
             <p>- A. We'll start by racking, mounting, and powering on the branch 1 2960 switch.</p>
                 <img width="1281" height="906" alt="Screenshot 2026-04-16 175802" src="https://github.com/user-attachments/assets/52b16c9b-2b4b-4f7a-ad8f-78c51d8dfa15" />
             <p>- B. Next we will do basic switch configurations (hostname, NTP, domain-name, SSH, etc).</p>
