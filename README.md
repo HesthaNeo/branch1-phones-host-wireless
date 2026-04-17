@@ -51,7 +51,9 @@
                 <p><em>- Successful.</em></p>
         <h3>Step 11: Install And Configure Corporate Wireless Access</h3>
             <p>- A. Install An AccessPoint-PT And Connect It To The Branch 1 Access Switch</p>
-            <p>- B. Configure The New AP With A uUnique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
+                <img width="761" height="493" alt="Screenshot 2026-04-17 002511" src="https://github.com/user-attachments/assets/7bbf7a62-1055-46a2-ac31-c6e59c229ac4" />
+            <p>- B. Configure The New AP With A Unique SSID, Channel, And Passphrase Using WPA2-PSK And AES</p>
+                <img width="868" height="882" alt="Screenshot 2026-04-17 002631" src="https://github.com/user-attachments/assets/d3135259-bce1-4142-a972-4421af21d3de" />
             <p>- C. Install Two Wireless Tablets And Configure Them With The Same SSID And Passphrase</p>
             <p>- D. Once The New Wireless Tablets Are Connected Confirm Access To The Corporate Networks And Internet</p>
 
